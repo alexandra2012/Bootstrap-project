@@ -11,32 +11,80 @@
     <!-- custom styling -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
-
-    <!-- bootstrap script -->
-    <script src="./assets/libs/bootstap/bootstrap-5.0.0-beta3-dist/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="container" style=" height: 100vh;">
-        <div class="row">
-            <div class="col-sm-12 hero">
-               <h1>NORWAY IS AMAIZING COUNTRY</h1>
+<div class="container">
+   <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" style="margin-top:20px;">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Menu</a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                       <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="./contacts.html" tabindex="-1">Contacts</a>
+                    </li>
+                 </ul>
+                 <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
             </div>
-        </div>
-
-        <div class="row">
+          </nav>
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active item-1">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Reine</h5>
+                  <p>Norway is one of the most amazing countries in the world.</p>
+                </div>
+              </div>
+              <div class="carousel-item item-2">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Lofoten Iclands</h5>
+                  <p>Lofoten is known for excellent fishing, nature attractions.</p>
+                </div>
+                </div>
+              <div class="carousel-item item-3">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h5>Pulpit Rock (Preikestolen)</h5>
+                      <p>A tourist attraction best suited for the active traveler.</p>
+                  </div>
+              </div>
+            </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                  <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+          <div class="row">
             <div class="col-sm-12 text-center"><br>
                 <h3>Contact form</h3> <br>          
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 left-side"></div>
+         </div>
+         <div class="row">
+            <div class="col-md-6 left-side">  
+            </div>
 
             <div class="col-md-6" right-side>
                 <div class="contacts-form">
-                    <div class="row">
-                      <div class="col-sm-12 text-center">
-                          <h4>Contact Information</h4>
-                      </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-6">
@@ -79,8 +127,161 @@
 
                         </div>
                       </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                            <label for="coments">Coments</label>
+                            <textarea name="" id="" class="form-control"></textarea>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="form-group mb-0"><label for="">Nationality</label>
+                            <select class="form-control" name="" id="">
+                                <option value="">Norway</option>
+                                <option value="">England</option>
+                                <option value="">Germany</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group"><label for="">City</label>
+                            <select class="form-control"  name="" id="">
+                                <option value="">Bergen</option>
+                                <option value="">Bristol</option>
+                                <option value="">Frankfurt</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row justify-content-sm-end">
+                          <div class="col-md-6 text-end"><br>
+                              <button type="button" class="btn btn-secondary">Reset</button>
+                              <button type="button" class="btn btn-primary">Confirm</button>
+                          </div>
+                      </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+              <img src="https://i.pinimg.com/600x315/d3/b1/eb/d3b1ebd42e920c1bb0764b09e06b08e6.jpg" class="card-img-top" alt="Trollstigen">
+              <div class="card-body">
+                <h5 class="card-title">Trollstigen</h5>
+                <p class="card-text">Trollstigen is a serpentine mountain road and pass in Rauma Municipality, Møre og Romsdal county, Norway. It is part of Norwegian County Road 63 that connects the town of Åndalsnes in Rauma.</p>
+                <div class="frame">
+                  <button class="custom-btn btn-12"><span>Click!</span><span>Read More</span></button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+              <img src="https://scubadiverlife.com/wp-content/uploads/2017/12/orcas_norway_featured-256x256.jpeg" class="card-img-top" alt="Tysfjord">
+              <div class="card-body">
+                <h5 class="card-title">Tysfjord</h5>
+                <p class="card-text">Tysfjord is a former municipality in Nordland county, Norway. The municipality existed from 1869 until its dissolution in 2020. The municipality was part of the traditional district of Ofoten.</p>
+                <div class="frame">
+                  <button class="custom-btn btn-12"><span>Click!</span><span>Read More</span></button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+              <img src="https://hi-cdn.t-rp.co.uk/images/hotels/3403749/3?width=870&height=480&crop=false" class="card-img-top" alt="Dombaas Hotel Lillehammer">
+              <div class="card-body">
+                <h5 class="card-title">Dombaas Hotel Lillehammer</h5>
+                <p class="card-text">Set on 3 hectares of park-like grounds, this modern hotel is a 9-minute walk from the Maihaugen open-air museum, 2 km from the Lysgårdsbakkene Olympic ski jump arena and 1 km from the Lillehammer train station.</p>
+                <div class="frame">
+                  <button class="custom-btn btn-12"><span>Click!</span><span>Read More</span></button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+              <img src="https://lafleurdevanille.files.wordpress.com/2015/07/norway-oslo-header-1.jpg?w=256&h=256&crop=1" class="card-img-top" alt="national gallery – La Fleur de Vanille">
+              <div class="card-body">
+                <h5 class="card-title">National gallery – La Fleur de Vanille</h5>
+                <p class="card-text">TFounded in 1837, the National Gallery houses Norway’s largest public collection of paintings, drawings and sculptures. In its permanent and temporary exhibitions.</p>
+                <div class="frame">
+                  <button class="custom-btn btn-12"><span>Click!</span><span>Read More</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
+
+      <!-- Modal -->
+      <div class="modal fade" id="Trollstigen" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="TrollstigenLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="TrollstigenLabel">Trollstigen</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+          
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="Tysfjord" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="TysfjordLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="TysfjordLabel">Tysfjord</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="Dombaas Hotel Lillehammer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="Dombaas Hotel LillehammerLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="Dombaas Hotel LillehammerLabel">Dombaas Hotel Lillehammer</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+           
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+     
+      <script src="./assets/libs/bootstap/bootstrap-5.0.0-beta3-dist/jquery.js"></script>
+    
+      <script src="./assets/libs/bootstap/bootstrap-5.0.0-beta3-dist/js/bootstrap.min.js"></script>
+
+      <script src="./assets/libs/bootstap/bootstrap-5.0.0-beta3-dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="./assets/js/js.js"></script>
+     
+</body>
+</html>
